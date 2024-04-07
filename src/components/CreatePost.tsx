@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-
+import { useNavigate } from 'react-router-dom';
 import DialogTitle from '@mui/material/DialogTitle';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -21,7 +21,7 @@ export default function FormDialog() {
   const handleClose = () => {
     setOpen(false);
   };
-  
+  const navigate = useNavigate();
 
 
 
@@ -79,7 +79,7 @@ export default function FormDialog() {
                 });
                 if (response.ok) {
                   setInterval(() => {
-                    window.location.reload();
+                    navigate('/blogs');
                   }, 5000)
                 }
 
