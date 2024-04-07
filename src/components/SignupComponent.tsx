@@ -18,7 +18,7 @@ export const SignupComponent = () => {
             const res = await axios.post(`${url}/api/v1/user/signup`, postInputs);
             const json = await res.data;
             console.log(json.jwt);
-            navigate("/signin")
+            navigate("/")
         } catch (e) {
             alert("Error while signing up");
         }
