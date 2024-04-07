@@ -9,7 +9,7 @@ First Fork the run
 npm install
 ```
 
-##Dependencies
+## Dependencies
 react-toastify -- 
 ```bash
 npm install --save react-toastify
