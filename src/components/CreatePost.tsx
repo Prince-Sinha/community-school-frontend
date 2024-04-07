@@ -43,7 +43,7 @@ export default function FormDialog() {
             console.log(token)
             if (token) {
               try {
-                const response = await fetch(`${url}/api/v1/blog/create`, {
+                const response = await fetch(`https://backend.prince211114058.workers.dev/api/v1/blog/create`, {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ export default function FormDialog() {
                 });
                 if (response.ok) {
                   setInterval(() => {
-                    navigate('/blogs');
+                    navigate('/');
                   }, 5000)
                 }
 

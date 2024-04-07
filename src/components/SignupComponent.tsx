@@ -15,7 +15,7 @@ export const SignupComponent = () => {
     const url = import.meta.env.VITE_BACKEND_URL;
     async function sendRequest() {
         try {
-            const res = await axios.post(`${url}/api/v1/user/signup`, postInputs);
+            const res = await axios.post(`https://backend.prince211114058.workers.dev/api/v1/user/signup`, postInputs);
             const json = await res.data;
             console.log(json.jwt);
             navigate("/")
