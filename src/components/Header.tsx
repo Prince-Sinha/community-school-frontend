@@ -4,14 +4,14 @@ import {Avatar} from '@mui/material';
 export default function Header(){
     const navigate = useNavigate();
     const handleSubmit1 = ()=>{
-        navigate(`/signin`);
+        navigate(`/`);
     }
     const handleSubmit2 = ()=>{
         navigate(`/signup`)
     }
     const handleSubmit3 = ()=>{
         localStorage.setItem('token','');
-        navigate(`/signin`);
+        navigate(`/`);
     }
     const token = localStorage.getItem('token');
     const name = localStorage.getItem('name');
