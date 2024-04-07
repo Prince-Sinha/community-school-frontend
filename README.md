@@ -19,3 +19,8 @@ material ui -
 ```bash
 npm install @mui/material @emotion/react @emotion/styled
 ```
+tailwind -
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
