@@ -79,7 +79,7 @@ export default function FormDialog() {
                 });
                 if (response.ok) {
                   setInterval(() => {
-                    navigate('/');
+                    window.location.reload();
                   }, 5000)
                 }
 
