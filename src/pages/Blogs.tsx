@@ -1,5 +1,4 @@
-import { useEffect, useState, memo } from "react"
-import { BACKEND_URL } from "../config";
+import { useEffect, useState } from "react"
 import { BlogCard } from "../components/BlogCard";
 import Header from "../components/Header";
 import { NavLink } from "react-router-dom";
