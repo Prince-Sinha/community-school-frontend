@@ -7,12 +7,15 @@ First Fork the run
 
 ```bash
 npm install
+```
 
 ##Dependencies
-toastify -- 
+react-toastify -- 
 ```bash
 npm install --save react-toastify
+```
 
 material ui -
 ```bash
 npm install @mui/material @emotion/react @emotion/styled
+```
