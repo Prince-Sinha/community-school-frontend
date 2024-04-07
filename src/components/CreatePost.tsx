@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import { useNavigate } from 'react-router-dom';
+
 import DialogTitle from '@mui/material/DialogTitle';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -21,7 +21,7 @@ export default function FormDialog() {
   const handleClose = () => {
     setOpen(false);
   };
-  const navigate = useNavigate();
+  
 
 
 
@@ -43,7 +43,7 @@ export default function FormDialog() {
             console.log(token)
             if (token) {
               try {
-                const response = await fetch(`https://backend.prince211114058.workers.dev/api/v1/blog/create`, {
+                const response = await fetch(`${url}/api/v1/blog/create`, {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json',

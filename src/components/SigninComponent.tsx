@@ -14,7 +14,7 @@ export const SigninComponent = () => {
     const url = import.meta.env.VITE_BACKEND_URL;
     async function sendRequest() {
         try {
-            const res = await axios.post(`https://backend.prince211114058.workers.dev/api/v1/user/signin`, postInputs);
+            const res = await axios.post(`${url}/api/v1/user/signin`, postInputs);
             console.log(res);
             const json = await res.data;
             console.log(json.jwt);
@@ -24,7 +24,7 @@ export const SigninComponent = () => {
 
             localStorage.setItem('token', json.jwt);
             localStorage.setItem('name',json.name);
-            localStorage.setItem('id',json.id);
+            localStorage.setItem('',json.id);
             navigate("/blogs");
         } catch (e) {
             console.log((e as Error).message);
